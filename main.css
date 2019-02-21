@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: black;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.headerText {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.aboutText {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'ABeeZee', sans-serif;
+    text-transform: capitalize;
+}
+
+.aboutSentence {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.skillsText {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+.htmlLogo {
+    height: 128px;
+    width: 128px;
+}
+
+.cssLogo {
+    height: 128px;
+    width: 100px;
+}
+
+.projectText {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'ABeeZee', sans-serif;
+    text-transform: capitalize;
+}
+
+.card {
+    display: flex;
+    transition: all 1s;
+    vertical-align: text-bottom;
+}
+
+.card:hover {
+    opacity: 0.2;
+    visibility: visible;
+}
+
+.card-group {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.card-title {
+    align-items: center;
+    justify-content: center;
+}
+
+.card-text {
+    color: crimson;
+    font-weight: bolder;
+}
+
+.card-img-top {
+    height: 300px;
+    width: 576px;
+}
+
+.keyCodebtn {
+    cursor: pointer;
+}
+
+.drumKitbtn {
+    cursor: pointer;
+}
+
+.diceGamebtn {
+    cursor: pointer;
+}
+
+.whackbtn {
+    cursor: pointer;
+}
+
+.contactText {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'ABeeZee', sans-serif;
+    text-transform: capitalize;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #343a40;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+}
+
+#footText {
+    line-height: 50px;
+    color: white;
+    text-align: center;
+}
+
+@keyframes lightSpeedIn {
+    from {
+      -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+      transform: translate3d(100%, 0, 0) skewX(-30deg);
+      opacity: 0;
+    }
+  
+    60% {
+      -webkit-transform: skewX(20deg);
+      transform: skewX(20deg);
+      opacity: 1;
+    }
+  
+    80% {
+      -webkit-transform: skewX(-5deg);
+      transform: skewX(-5deg);
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+@keyframes lightSpeedOut {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+      transform: translate3d(100%, 0, 0) skewX(30deg);
+      opacity: 0;
+    }
+  }
+  
