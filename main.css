@@ -6,15 +6,29 @@
     font-family: 'ABeeZee', sans-serif;
 }
 
-.headerText {
+.first {
+    background-color: black;
+    height: 100vh;
+}
+
+.introText {
+    color: white;
     text-align: center;
-    font-size: 20px;
-    font-family: 'ABeeZee', sans-serif;
+    line-height: 50px;
+    -webkit-font-smoothing: antialiased;
+    padding: 325px 0;
+}
+
+.highlight {
+    color: #E61E1E;
+    font-weight: bolder;
 }
 
 .aboutText {
+    height: 100vh;
     text-align: center;
     font-size: 30px;
+    line-height: 30px;
     font-family: 'ABeeZee', sans-serif;
     text-transform: capitalize;
 }
@@ -98,6 +112,7 @@
 }
 
 .contactText {
+    color: black;
     text-align: center;
     font-size: 30px;
     font-family: 'ABeeZee', sans-serif;
