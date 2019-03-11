@@ -1,175 +1,278 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    color: black;
-    font-family: 'ABeeZee', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: black;
+  /* font-family: "ABeeZee", sans-serif; */
 }
 
 .first {
-    background-color: black;
-    height: 100vh;
+  background-color: black;
+  height: 100vh;
+}
+
+.centerMe {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .introText {
-    color: white;
-    text-align: center;
-    line-height: 50px;
-    -webkit-font-smoothing: antialiased;
-    padding: 325px 0;
+  position: absolute;
+  color: white;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-self: center;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Press Start 2P";
 }
 
 .highlight {
-    color: #E61E1E;
-    font-weight: bolder;
+  color: #e61e1e;
+  font-weight: bolder;
+}
+
+.arrowDown {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+  border-bottom: 3px solid crimson;
+  animation: popDown 0.5s;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
 }
 
 .aboutText {
-    height: 100vh;
-    text-align: center;
-    font-size: 30px;
-    line-height: 30px;
-    font-family: 'ABeeZee', sans-serif;
-    text-transform: capitalize;
+  height: 100vh;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: "ABeeZee", sans-serif;
+  text-transform: capitalize;
 }
 
 .aboutSentence {
-    text-align: center;
-    font-size: 18px;
-    font-family: 'ABeeZee', sans-serif;
+  text-align: center;
+  font-size: 18px;
+  font-family: "ABeeZee", sans-serif;
 }
 
 .skillsText {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
 }
 
 .htmlLogo {
-    height: 128px;
-    width: 128px;
+  height: 128px;
+  width: 128px;
 }
 
 .cssLogo {
-    height: 128px;
-    width: 100px;
+  height: 128px;
+  width: 100px;
 }
 
 .projectText {
-    text-align: center;
-    font-size: 30px;
-    font-family: 'ABeeZee', sans-serif;
-    text-transform: capitalize;
+  text-align: center;
+  font-size: 30px;
+  font-family: "ABeeZee", sans-serif;
+  text-transform: capitalize;
 }
 
 .card {
-    display: flex;
-    transition: all 1s;
-    vertical-align: text-bottom;
+  display: flex;
+  transition: all 1s;
+  vertical-align: text-bottom;
 }
 
 .card:hover {
-    opacity: 0.2;
-    visibility: visible;
+  opacity: 0.2;
+  visibility: visible;
 }
 
 .card-group {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: black;
 }
 
 .card-title {
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-text {
-    color: crimson;
-    font-weight: bolder;
+  color: crimson;
+  font-weight: bolder;
 }
 
 .card-img-top {
-    height: 300px;
-    width: 576px;
+  height: 300px;
+  width: 576px;
 }
 
 .keyCodebtn {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .drumKitbtn {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .diceGamebtn {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.whackbtn {
-    cursor: pointer;
+.todobtn {
+  cursor: pointer;
+}
+
+.calculatorbtn {
+  cursor: pointer;
+}
+
+.contactTitle {
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-family: "ABeeZee", sans-serif;
+  text-transform: capitalize;
 }
 
 .contactText {
-    color: black;
-    text-align: center;
-    font-size: 30px;
-    font-family: 'ABeeZee', sans-serif;
-    text-transform: capitalize;
+  color: black;
+  text-align: center;
+  font-size: 15px;
+}
+
+section:nth-of-type(5) input[type="text"],
+section:nth-of-type(5) input[type="email"],
+section:nth-of-type(5) textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border: 0;
+  padding: 10px 15px;
+  font-size: 12pt;
+  margin-bottom: 3px;
+  color: black;
+  justify-content: center;
+}
+
+#success {
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  transition: height 0.25s;
+}
+
+#success div {
+  background: #0444ac;
+  color: white;
+  font-size: 10pt;
+  font-weight: 600;
+  padding: 5px 0;
+  border: 1px solid #5779b1;
+}
+
+.button {
+  float: center;
+  margin: 5px 0 0 0;
+  font-size: 12pt;
+  padding: 10px 30px;
+  color: black;
+  background: transparent;
+  outline: 0;
 }
 
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 50px;
-    width: 100%;
-    background-color: #343a40;
-    -webkit-font-smoothing: antialiased;
-    display: flex;
-    justify-content: center;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #343a40;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
 }
 
 #footText {
-    line-height: 50px;
-    color: white;
-    text-align: center;
+  line-height: 50px;
+  color: white;
+  text-align: center;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 15px;
+  width: 25px;
+  text-align: right;
+  align-self: center;
+  text-decoration: none;
+  margin: 20px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
 }
 
 @keyframes lightSpeedIn {
-    from {
-      -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-      transform: translate3d(100%, 0, 0) skewX(-30deg);
-      opacity: 0;
-    }
-  
-    60% {
-      -webkit-transform: skewX(20deg);
-      transform: skewX(20deg);
-      opacity: 1;
-    }
-  
-    80% {
-      -webkit-transform: skewX(-5deg);
-      transform: skewX(-5deg);
-    }
-  
-    to {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
   }
 
-@keyframes lightSpeedOut {
-    from {
-      opacity: 1;
-    }
-  
-    to {
-      -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
-      transform: translate3d(100%, 0, 0) skewX(30deg);
-      opacity: 0;
-    }
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
   }
-  
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes lightSpeedOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+}
