@@ -69,13 +69,10 @@
       </div>
     </nav>
 
-    <h1
-      class="aboutText waypoint animated slide-in-left"
-      data-animation="slide-in-left"
-    >
+    <h1 class="aboutText waypoint" data-animation="slide-in-left">
       About
     </h1>
-    <h2 class="aboutSentence">
+    <h2 class="aboutSentence animated slideInDown">
       This is my portfolio that I am creating as part of my master course with
       CodeNation. This portfolio page will include my projects, my work
       experience, qualifications and my contact details. During my time at
@@ -175,23 +172,7 @@
         class="fa fa-linkedin"
       ></a>
     </div>
-
-    <script type="text/javascript">
-      window.onscroll = () => {
-        myFunction();
-      };
-
-      let navbar = document.getElementsByClassName("navbar")[0];
-
-      let sticky = navbar.offsetTop;
-
-      const myFunction = () => {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky");
-        } else {
-          navbar.classList.remove("sticky");
-        }
-      };
-    </script>
+    <script src="script.js"></script>
+    <script type="text/javascript"></script>
   </body>
 </html>
