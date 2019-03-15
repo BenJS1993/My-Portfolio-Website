@@ -13,6 +13,7 @@
 
 .centerMe {
   display: flex;
+  flex-direction: column;
   align-content: center;
   justify-content: center;
   height: 100vh;
@@ -24,6 +25,7 @@
   width: 100%;
   text-align: center;
   display: flex;
+  flex-direction: column !important;
   align-self: center;
   -webkit-font-smoothing: antialiased;
   font-family: "Press Start 2P";
@@ -41,6 +43,7 @@
 
 .navbar {
   position: fixed;
+  background-color: solid !important;
   top: 0;
   overflow: hidden;
   text-transform: uppercase;
@@ -53,8 +56,15 @@
   top: 0 !important;
   width: 100%;
 }
+
 .sticky + .content {
   padding-top: 60px;
+}
+
+.about {
+  justify-content: center !important;
+  align-content: center !important;
+  align-self: center !important;
 }
 
 .aboutText {
@@ -68,12 +78,9 @@
 
 .aboutSentence {
   display: flex;
+  flex-direction: column;
   position: relative;
-  /* left: 200px;
-  bottom: 200px; */
   text-align: center;
-  align-content: center;
-  justify-content: center;
   font-size: 30px;
   line-height: 40px;
   font-family: "ABeeZee", sans-serif;
@@ -182,6 +189,7 @@ input[type="text"] {
   margin: 10px auto;
   display: inline-block;
   border: 1px solid #ccc;
+  background-color: #343a40;
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
