@@ -83,8 +83,8 @@
   text-align: center;
   font-size: 30px;
   line-height: 40px;
+  padding: calc((100vw - 700px) / 2);
   font-family: "ABeeZee", sans-serif;
-  max-width: 700px;
 }
 
 .box {
@@ -96,10 +96,23 @@
 }
 
 .column {
+  column-count: 3;
+}
+
+.column1 {
   display: block;
-  flex-basis: 0;
+  column-count: 1;
+  /* flex-basis: 0;
   flex-grow: 1;
-  flex-shrink: 1;
+  flex-shrink: 1; */
+}
+
+.column2 {
+  column-count: 1;
+}
+
+.column3 {
+  column-count: 1;
 }
 
 /* .skillsText {
@@ -249,8 +262,9 @@ textarea {
 }
 
 .button {
-  display: inline-block;
+  display: inline-block !important;
   border: 2px solid #fff;
+  border-radius: 4px;
   margin: 5px 0 0 0;
   font-size: 12pt;
   padding: 10px 30px;
@@ -282,6 +296,7 @@ textarea {
 .fa {
   padding: 5px;
   font-size: 15px;
+  height: 25px;
   width: 25px;
   text-align: right;
   align-self: center;
@@ -291,11 +306,16 @@ textarea {
 }
 
 .fa:hover {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .fa-linkedin {
   background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: gray;
   color: white;
 }
 
