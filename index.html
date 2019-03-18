@@ -24,7 +24,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>My Portfolio Website</title>
+    <title>Portfolio</title>
   </head>
   <body>
     <div class="first animated fadeIn">
@@ -60,6 +60,9 @@
             <a class="nav-link" href="/#about">About</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="/#skills">Skills</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="/#projectText">Projects</a>
           </li>
           <li class="nav-item">
@@ -84,10 +87,50 @@
       </h2>
     </div>
 
-    <h3 class="skillsText">
-      <img class="htmlLogo" src="images/HTML5_Logo_128.png" />
-      <img class="cssLogo" src="images/CSS3_logo_and_wordmark.svg.png" />
-    </h3>
+    <div class="box">
+      <h3 class="skills">
+        <div class="column">
+          <h1 class="skillsTitle1">Front-End Developer</h1>
+          <p class="skillsSentence1">
+            "I enjoy being able to create and code things and making them look
+            stylish."
+          </p>
+          <p class="skillsList1">Languages:</p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>JavaScript</li>
+            <li>React</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h1 class="skillsTitle2"></h1>
+          <p class="skillsSentence2">
+            "These are the skills that I am currently learning"
+          </p>
+          <p class="skillsList2">Languages:</p>
+          <ul>
+            <li>Node.js</li>
+            <li>Express JS</li>
+            <li>APIs</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h1 class="skillsTitle3">Other Skills</h1>
+          <p class="skillsSentence3">
+            "These are skills that I have learned through different courses and
+            jobs"
+          </p>
+          <p class="skillsList3">Skills:</p>
+          <ul>
+            <li>Problem Solving</li>
+          </ul>
+        </div>
+        <img class="htmlLogo" src="images/HTML5_Logo_128.png" />
+        <img class="cssLogo" src="images/CSS3_logo_and_wordmark.svg.png" />
+      </h3>
+    </div>
 
     <h1 class="projectText">Projects</h1>
 
@@ -173,10 +216,12 @@
       <div id="success">
         <div>
           "Message has been sent!"
-          <span id="close" class="mdi mdi-close"> </span>
-          <input class="button" type="submit" id="submit" value="SUBMIT" />
+          <span id="close" class="mdi mdi-close">
+            ::before
+          </span>
         </div>
       </div>
+      <input class="button" type="submit" id="submit" value="SUBMIT" />
     </form>
     <div class="footer">
       <p id="footText">Designed by Benjamin John Stevenson * 2019</p>

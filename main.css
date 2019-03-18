@@ -87,11 +87,26 @@
   max-width: 700px;
 }
 
-.skillsText {
+.box {
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5) 0 0 0 1px #e6ecf8;
+  color: #293347;
+  display: block;
+}
+
+.column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+/* .skillsText {
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: center;
-}
+} */
 
 .htmlLogo {
   height: 128px;
@@ -234,13 +249,17 @@ textarea {
 }
 
 .button {
-  float: center;
+  display: inline-block;
+  border: 2px solid #fff;
   margin: 5px 0 0 0;
   font-size: 12pt;
   padding: 10px 30px;
-  color: black;
-  background: transparent;
+  width: 50vw;
+  color: white;
+  background: black;
   outline: 0;
+  box-sizing: inherit;
+  cursor: pointer;
 }
 
 .footer {
