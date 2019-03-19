@@ -3,7 +3,7 @@
   padding: 0;
   border: 0;
   color: black;
-  /* font-family: "ABeeZee", sans-serif; */
+  font-family: "Press Start 2P";
 }
 
 .first {
@@ -24,11 +24,31 @@
   color: white;
   width: 100%;
   text-align: center;
-  display: flex;
   flex-direction: column !important;
   align-self: center;
   -webkit-font-smoothing: antialiased;
-  font-family: "Press Start 2P";
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+}
+
+#introCursor {
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 20px;
+  background-color: white;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: white;
+  }
 }
 
 .highlight {
@@ -49,6 +69,7 @@
   text-transform: uppercase;
   border-bottom: 3px solid crimson;
   animation: popDown 0.5s;
+  z-index: 20 !important;
 }
 
 .sticky {
@@ -68,11 +89,10 @@
 }
 
 .aboutText {
-  height: 100vh;
+  height: 10em;
   text-align: center;
   font-size: 30px;
   line-height: 30px;
-  font-family: "ABeeZee", sans-serif;
   text-transform: capitalize;
 }
 
@@ -84,10 +104,10 @@
   font-size: 30px;
   line-height: 40px;
   padding: calc((100vw - 700px) / 2);
-  font-family: "ABeeZee", sans-serif;
 }
 
 .box {
+  height: 100vh;
   border-radius: 12px;
   background-color: #fff;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5) 0 0 0 1px #e6ecf8;
@@ -96,30 +116,23 @@
 }
 
 .column {
-  column-count: 3;
+  box-sizing: border-box;
+  float: left;
+  width: 33.33%;
+  padding: 5px;
 }
 
-.column1 {
-  display: block;
-  column-count: 1;
-  /* flex-basis: 0;
-  flex-grow: 1;
-  flex-shrink: 1; */
+.skillsTitle1 {
+  font-size: 15px;
 }
 
-.column2 {
-  column-count: 1;
+.skillsTitle2 {
+  font-size: 20px;
 }
 
-.column3 {
-  column-count: 1;
+.skillsTitle3 {
+  font-size: 20px;
 }
-
-/* .skillsText {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: center;
-} */
 
 .htmlLogo {
   height: 128px;
@@ -134,8 +147,8 @@
 .projectText {
   text-align: center;
   font-size: 30px;
-  font-family: "ABeeZee", sans-serif;
   text-transform: capitalize;
+  font-family: "Press Start 2P";
 }
 
 .card {
@@ -150,6 +163,11 @@
 }
 
 .card-group {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 80px auto 80px;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -195,8 +213,8 @@
   color: black;
   text-align: center;
   font-size: 30px;
-  font-family: "ABeeZee", sans-serif;
   text-transform: capitalize;
+  font-family: "Press Start 2P";
 }
 
 .contactText {
@@ -277,9 +295,7 @@ textarea {
 }
 
 .footer {
-  left: 0;
-  bottom: 0;
-  height: 50px;
+  text-align: center;
   width: 100%;
   background-color: #343a40;
   -webkit-font-smoothing: antialiased;
