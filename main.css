@@ -6,6 +6,10 @@
   font-family: "Press Start 2P";
 }
 
+body {
+  -webkit-text-size-adjust: none;
+}
+
 .first {
   background-color: black;
   height: 100vh;
@@ -30,6 +34,10 @@
   display: inline-block;
   vertical-align: middle;
   color: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #introCursor {
@@ -89,7 +97,7 @@
 }
 
 .aboutText {
-  height: 10em;
+  height: 1em;
   text-align: center;
   font-size: 30px;
   line-height: 30px;
@@ -107,19 +115,20 @@
 }
 
 .box {
-  height: 100vh;
+  height: 200vh;
   border-radius: 12px;
   background-color: #fff;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5) 0 0 0 1px #e6ecf8;
   color: #293347;
-  display: block;
+  display: flex;
 }
 
 .column {
   box-sizing: border-box;
+  line-height: 36px;
   float: left;
   width: 33.33%;
-  padding: 5px;
+  padding: 18px 20px 18px 20px;
 }
 
 .skillsTitle1 {
@@ -132,6 +141,12 @@
 
 .skillsTitle3 {
   font-size: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  [class*="column"] {
+    width: 100%;
+  }
 }
 
 .htmlLogo {
@@ -220,6 +235,7 @@
 .contactText {
   color: black;
   text-align: center;
+  font-family: "Press Start 2P";
   font-size: 15px;
 }
 
@@ -247,6 +263,7 @@ input[type="email"] {
   margin: 10px auto;
   display: inline-block;
   border: 1px solid #ccc;
+  background-color: #343a40;
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
@@ -254,10 +271,11 @@ input[type="email"] {
 
 textarea {
   width: 75%;
-  padding: 12px;
+  padding: 12px 20px;
   height: 100px;
   margin: 10px auto !important;
   border: 1px solid #ccc;
+  background-color: #343a40;
   border-radius: 4px;
   resize: vertical;
 }
@@ -279,16 +297,17 @@ textarea {
   border: 1px solid #5779b1;
 }
 
-.button {
+.submitButton {
   display: inline-block !important;
   border: 2px solid #fff;
   border-radius: 4px;
-  margin: 5px 0 0 0;
+  margin: 5px 0 10px 0;
   font-size: 12pt;
   padding: 10px 30px;
   width: 50vw;
+  align-self: center !important;
   color: white;
-  background: black;
+  background-color: black;
   outline: 0;
   box-sizing: inherit;
   cursor: pointer;
