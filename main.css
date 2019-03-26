@@ -5,6 +5,7 @@
   color: black;
   font-family: "Press Start 2P";
 }
+
 html {
   cursor: url(..node_modules/nes.css/assets/cursor.png), auto, pointer;
 }
@@ -123,7 +124,7 @@ button {
 }
 
 .box {
-  height: 200vh;
+  height: 20em;
   border-radius: 12px;
   background-color: #fff;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5) 0 0 0 1px #e6ecf8;
@@ -137,10 +138,6 @@ button {
   float: left;
   width: 33.33%;
   padding: 18px 20px 18px 20px;
-}
-
-.box {
-  height: 1em;
 }
 
 .skillsTitle1 {
@@ -309,53 +306,58 @@ button {
   outline: 0;
 }
 
-.keyCodebtn {
-  cursor: pointer;
-  background: black;
-  color: white;
-  margin: auto;
-}
-
-.drumKitbtn {
-  cursor: pointer;
-  background: black;
-  color: white;
-  margin: auto;
-}
-
-.diceGamebtn {
-  cursor: pointer;
-  background: black;
-  color: white;
-  margin: auto;
-}
-
-.todobtn {
-  cursor: pointer;
-  background: black;
-  color: white;
-  margin: auto;
-}
-
-.calculatorbtn {
-  cursor: pointer;
-  background: black;
-  color: white;
-  margin: auto;
-}
-
 .backendProjectText {
   text-align: center;
   font-size: 20px;
   font-family: "Press Start 2P";
 }
 
-.weatherBtn {
-  cursor: pointer;
-  background: black;
-  color: white;
-  margin: auto;
-  border: black;
+.column-frontend {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row-frontend {
+  margin: 0 -5px;
+}
+
+.row-frontend:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column-frontend {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.column-backend {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row-backend {
+  margin: 0 -5px;
+}
+
+.row-backend:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column-backend {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 .card {
@@ -370,6 +372,7 @@ button {
 }
 
 .card-title {
+  font-size: 20px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -460,30 +463,15 @@ button {
   text-align: center;
 }
 
-.fa {
-  padding: 5px;
-  font-size: 15px;
-  height: 25px;
-  width: 25px;
-  text-align: right;
-  align-self: center;
-  text-decoration: none;
-  margin: 20px 2px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-  opacity: 0.9;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-github {
-  background: gray;
-  color: white;
+.nes-icon {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  transform: scale(2);
+  transform-origin: top left;
 }
 
 @keyframes lightSpeedIn {
