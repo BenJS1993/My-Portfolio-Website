@@ -9,6 +9,19 @@
       @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
     </style>
     <link rel="stylesheet" href="main.css" />
+    <link href="node_modules/nes.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/nes.css@2.1.0/css/nes.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/nes.css@latest/css/nes.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/nes.css/css/nes-core.min.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -96,7 +109,7 @@
             stylish
           </p>
           <p class="skillsList1">Languages:</p>
-          <ul>
+          <ul class="nes-list is-disc">
             <li>HTML</li>
             <li>CSS</li>
             <li>Bootstrap</li>
@@ -110,7 +123,7 @@
             These are the skills that I am currently learning
           </p>
           <p class="skillsList2">Languages:</p>
-          <ul>
+          <ul class="nes-list is-disc">
             <li>Node.js</li>
             <li>Express JS</li>
             <li>APIs</li>
@@ -123,7 +136,7 @@
             jobs
           </p>
           <p class="skillsList3">Skills:</p>
-          <ul>
+          <ul class="nes-list is-disc">
             <li>Problem Solving</li>
           </ul>
         </div>
@@ -133,62 +146,94 @@
     </div>
 
     <h1 class="projectText">Projects</h1>
-    <div class="card-group">
-      <div class="card">
-        <img
-          class="card-img-top"
-          src="./images/Screenshot 2019-02-19 at 15.19.23.png"
-          alt="Card image cap"
-        />
-        <div class="animated lightSpeedIn card-img-overlay">
-          <h5 class="card-title">KeyCode Project</h5>
-          <p class="card-text">JavaScript</p>
-          <button class="keyCodebtn">KeyCode</button>
-          <p class="card-text"><small class="text-muted"></small></p>
+    <h2 class="frontendProjectText">Front-End Projects</h2>
+
+    <div class="row">
+      <div class="column">
+        <div class="animated lightSpeedIn card">
+          <h3 class="card-title">KeyCode</h3>
+          <p class="cardText">JavaScript</p>
+          <a
+            button
+            class="nes-btn"
+            href="https://benjs1993.github.io/JS-Keycode-Challenge/"
+          >
+            Link
+          </a>
         </div>
       </div>
-      <div class="card">
-        <img
-          class="card-img-top"
-          src="./images/Screenshot 2019-02-19 at 15.20.47.png"
-          alt="Card image cap"
-        />
-        <div class="animated lightSpeedIn card-img-overlay">
-          <h5 class="card-title">DrumKit Project</h5>
-          <p class="card-text">JavaScript</p>
-          <button class="drumKitbtn">DrumKit</button>
-          <p class="card-text"><small class="text-muted"></small></p>
+
+      <div class="column">
+        <div class="animated lightSpeedIn card">
+          <h3 class="card-title">Drumkit</h3>
+          <p class="cardText">JavaScript</p>
+          <a
+            button
+            class="nes-btn"
+            href="https://benjs1993.github.io/JS-Drumkit-Challenge/"
+          >
+            Link
+          </a>
         </div>
       </div>
-      <div class="card">
-        <img
-          class="card-img-top"
-          src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4385930.jpg"
-          alt="Card image cap"
-        />
-        <div class="animated lightSpeedIn card-img-overlay">
-          <h5 class="card-title">Dice Game Project</h5>
-          <p class="card-text">JavaScript</p>
-          <button class="diceGamebtn">Dice Game</button>
-          <p class="card-text"><small class="text-muted"></small></p>
+
+      <div class="column">
+        <div class="animated lightSpeedIn card">
+          <h3 class="card-title">Dice Game</h3>
+          <p class="cardText">JavaScript</p>
+          <a
+            button
+            class="nes-btn"
+            href="https://benjs1993.github.io/JS-Dice-Game/"
+          >
+            Link
+          </a>
         </div>
       </div>
-      <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap" />
-        <div class="animated lightSpeedIn card-img-overlay">
-          <h5 class="card-title">To-Do List</h5>
-          <p class="card-text">React</p>
-          <button class="todobtn">To-Do App</button>
-          <p class="card-text"><small class="text-muted"></small></p>
+
+      <div class="column">
+        <div class="animated lightSpeedIn card">
+          <h3 class="card-title">To-Do List</h3>
+          <p class="cardText">React</p>
+          <a
+            button
+            class="nes-btn"
+            href="https://benjs1993.github.io/React-To-Do-App/"
+          >
+            Link
+          </a>
         </div>
       </div>
-      <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap" />
-        <div class="animated lightSpeedIn card-img-overlay">
-          <h5 class="card-title">Calculator</h5>
-          <p class="card-text">React</p>
-          <button class="calculatorbtn">Calculator App</button>
-          <p class="card-text"><small class="text-muted"></small></p>
+
+      <div class="column">
+        <div class="animated lightSpeedIn card">
+          <h3 class="card-title">Calculator</h3>
+          <p class="cardText">React</p>
+          <a
+            button
+            class="nes-btn"
+            href="https://benjs1993.github.io/React-Calculator/"
+          >
+            Link
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="backendProjectText">Back-End Projects</h2>
+
+    <div class="row">
+      <div class="column">
+        <div class="animated lightSpeedIn card">
+          <h3 class="card-title">Weather App</h3>
+          <p class="cardText">API</p>
+          <a
+            button
+            class="nes-btn"
+            href="https://glacial-sea-98717.herokuapp.com/"
+          >
+            Link
+          </a>
         </div>
       </div>
     </div>
@@ -198,20 +243,25 @@
 
     <form class="mailSection">
       <input
-        id="in1"
+        class="nes-input"
         placeholder="Enter your name"
         type="text"
         name="name"
         required
       />
       <input
+        class="nes-input"
         placeholder="Enter your email"
         type="email"
         name="email"
         required
       />
-      <textarea placeholder="Your Message" type="text" name="message">
-      </textarea>
+      <textarea
+        class="nes-textarea"
+        placeholder="Your Message"
+        type="text"
+        name="message"
+      ></textarea>
       <div id="success">
         <div>
           "Message has been sent!"
@@ -220,15 +270,18 @@
           </span>
         </div>
       </div>
-      <input class="submitButton" type="submit" id="submit" value="SUBMIT" />
+      <button class="nes-btn">Submit</button>
     </form>
     <div class="footer">
       <p id="footText">Designed by Benjamin John Stevenson * 2019</p>
       <a
         href="https://www.linkedin.com/in/ben-stevenson-ba814414a/"
-        class="fa fa-linkedin"
+        class="nes-icon linkedin is-small"
       ></a>
-      <a href="https://github.com/BenJS1993" class="fa fa-github"></a>
+      <a
+        href="https://github.com/BenJS1993"
+        class="nes-icon github is-small"
+      ></a>
     </div>
     <script src="script.js"></script>
     <script type="text/javascript"></script>

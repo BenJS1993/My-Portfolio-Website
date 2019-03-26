@@ -5,9 +5,17 @@
   color: black;
   font-family: "Press Start 2P";
 }
+html {
+  cursor: url(..node_modules/nes.css/assets/cursor.png), auto, pointer;
+}
 
 body {
   -webkit-text-size-adjust: none;
+}
+
+a,
+button {
+  cursor: url(..node_modules/nes.css/assets/cursor-click.png), pointer;
 }
 
 .first {
@@ -131,7 +139,19 @@ body {
   padding: 18px 20px 18px 20px;
 }
 
+.box {
+  height: 1em;
+}
+
 .skillsTitle1 {
+  font-size: 20px;
+}
+
+.skillsSentence1 {
+  font-size: 15px;
+}
+
+.skillsList1 {
   font-size: 15px;
 }
 
@@ -139,8 +159,56 @@ body {
   font-size: 20px;
 }
 
+.skillsSentence2 {
+  font-size: 15px;
+}
+
+.skillsList2 {
+  font-size: 15px;
+}
+
 .skillsTitle3 {
   font-size: 20px;
+}
+
+.skillsSentence3 {
+  font-size: 15px;
+}
+
+.skillsList3 {
+  font-size: 15px;
+}
+
+.nes-list {
+  list-style-type: none;
+  font-size: 15px;
+}
+
+.nes-list li {
+  position: relative;
+}
+
+.nes-list.is-disc li::before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: -22px;
+  content: "";
+  width: 2px;
+  height: 2px;
+  color: #212529;
+  box-shadow: 8px 2px, 10px 2px, 6px 4px, 8px 4px, 10px 4px, 12px 4px, 4px 6px,
+    6px 6px, 8px 6px, 10px 6px, 12px 6px, 14px 6px, 4px 8px, 6px 8px, 8px 8px,
+    10px 8px, 12px 8px, 14px 8px, 6px 10px, 8px 10px, 10px 10px, 12px 10px,
+    8px 12px, 10px 12px;
+}
+
+@supports (-moz-appearance: meterbar) {
+  .nes-list.is-disc li::before {
+    box-shadow: 8px 2px, 10px 2px, 6px 4px, 8px 4px, 10px 4px, 12px 4px, 4px 6px,
+      6px 6px, 8px 6px, 10px 6px, 12px 6px, 14px 6px, 4px 8px, 6px 8px, 8px 8px,
+      10px 8px, 12px 8px, 14px 8px, 6px 10px, 8px 10px, 10px 10px, 12px 10px,
+      8px 12px, 10px 12px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -160,10 +228,134 @@ body {
 }
 
 .projectText {
+  height: 20em;
   text-align: center;
   font-size: 30px;
   text-transform: capitalize;
   font-family: "Press Start 2P";
+}
+
+.frontendProjectText {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Press Start 2P";
+  z-index: 10;
+}
+
+.row {
+  height: 20em;
+  z-index: 1;
+  margin: auto;
+}
+
+.column {
+  margin: auto;
+}
+
+.nes-btn {
+  border-image-slice: 2;
+  border-image-width: 2;
+  border-image-repeat: stretch;
+  border-image-source: url("data:image/svg+xml;utf8,<?xml version=1.0 encoding=UTF-8 ?><svg version=1.1 width=5 height=5 xmlns=http://www.w3.org/2000/svg><path d=M2 1 h1 v1 h-1 z M1 2 h1 v1 h-1 z M3 2 h1 v1 h-1 z M2 3 h1 v1 h-1 z fill=rgb(33,37,41) /></svg>");
+  border-image-outset: 2;
+  position: relative;
+  display: inline-block;
+  padding: 6px 8px;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  cursor: url(../node_modules/nes.css/assets/cursor-click.png) 14 0, pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: black;
+  background-color: white;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .nes-btn {
+    border-image-repeat: space;
+  }
+}
+
+@supports (-moz-appearance: meterbar) {
+  .nes-btn {
+    border-image-repeat: stretch;
+  }
+}
+
+.nes-btn::after {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+  content: "";
+  box-shadow: inset -4px -4px #adafbc;
+}
+
+.nes-btn:hover,
+.nes-btn:focus {
+  background-color: #e7e7e7;
+}
+
+.nes-btn:hover::after,
+.nes-btn:focus::after {
+  box-shadow: inset -6px -6px #adafbc;
+}
+
+.nes-btn:focus {
+  outline: 0;
+}
+
+.keyCodebtn {
+  cursor: pointer;
+  background: black;
+  color: white;
+  margin: auto;
+}
+
+.drumKitbtn {
+  cursor: pointer;
+  background: black;
+  color: white;
+  margin: auto;
+}
+
+.diceGamebtn {
+  cursor: pointer;
+  background: black;
+  color: white;
+  margin: auto;
+}
+
+.todobtn {
+  cursor: pointer;
+  background: black;
+  color: white;
+  margin: auto;
+}
+
+.calculatorbtn {
+  cursor: pointer;
+  background: black;
+  color: white;
+  margin: auto;
+}
+
+.backendProjectText {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Press Start 2P";
+}
+
+.weatherBtn {
+  cursor: pointer;
+  background: black;
+  color: white;
+  margin: auto;
+  border: black;
 }
 
 .card {
@@ -173,55 +365,20 @@ body {
 }
 
 .card:hover {
-  opacity: 0.2;
+  opacity: 0.5;
   visibility: visible;
 }
 
-.card-group {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 80px auto 80px;
-  grid-column-gap: 10px;
-  grid-row-gap: 15px;
+.card-title {
   text-align: center;
   align-items: center;
   justify-content: center;
-  color: black;
 }
 
-.card-title {
+.cardText {
+  text-align: center;
   align-items: center;
   justify-content: center;
-}
-
-.card-text {
-  color: crimson;
-  font-weight: bolder;
-}
-
-.card-img-top {
-  height: 300px;
-  width: 576px;
-}
-
-.keyCodebtn {
-  cursor: pointer;
-}
-
-.drumKitbtn {
-  cursor: pointer;
-}
-
-.diceGamebtn {
-  cursor: pointer;
-}
-
-.todobtn {
-  cursor: pointer;
-}
-
-.calculatorbtn {
-  cursor: pointer;
 }
 
 .contactTitle {
@@ -245,39 +402,30 @@ body {
   flex-direction: column;
 }
 
-input[type="text"] {
+.nes-input,
+.nes-textarea {
+  border-image-slice: 2;
+  border-image-width: 2;
+  border-image-repeat: stretch;
+  border-image-source: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="5" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2 1 h1 v1 h-1 z M1 2 h1 v1 h-1 z M3 2 h1 v1 h-1 z M2 3 h1 v1 h-1 z" fill="rgb(33,37,41)" /></svg>');
+  border-image-outset: 2;
   width: 75%;
-  padding: 12px 20px;
-  margin: 10px auto;
-  display: inline-block;
-  border: 1px solid #ccc;
-  background-color: #343a40;
-  border-radius: 4px;
-  box-sizing: border-box;
-  resize: vertical;
+  padding: 0.5rem 1rem;
+  margin: 4px;
 }
 
-input[type="email"] {
-  width: 75%;
-  padding: 12px 20px;
-  margin: 10px auto;
-  display: inline-block;
-  border: 1px solid #ccc;
-  background-color: #343a40;
-  border-radius: 4px;
-  box-sizing: border-box;
-  resize: vertical;
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .nes-input,
+  .nes-textarea {
+    border-image-repeat: space;
+  }
 }
 
-textarea {
-  width: 75%;
-  padding: 12px 20px;
-  height: 100px;
-  margin: 10px auto !important;
-  border: 1px solid #ccc;
-  background-color: #343a40;
-  border-radius: 4px;
-  resize: vertical;
+@supports (-moz-appearance: meterbar) {
+  .nes-input,
+  .nes-textarea {
+    border-image-repeat: stretch;
+  }
 }
 
 #success {
@@ -295,22 +443,6 @@ textarea {
   font-weight: 600;
   padding: 5px 0;
   border: 1px solid #5779b1;
-}
-
-.submitButton {
-  display: inline-block !important;
-  border: 2px solid #fff;
-  border-radius: 4px;
-  margin: 5px 0 10px 0;
-  font-size: 12pt;
-  padding: 10px 30px;
-  width: 50vw;
-  align-self: center !important;
-  color: white;
-  background-color: black;
-  outline: 0;
-  box-sizing: inherit;
-  cursor: pointer;
 }
 
 .footer {
