@@ -125,7 +125,7 @@ button {
 }
 
 .box {
-  height: 20em;
+  height: 30em;
   border-radius: 12px;
   background-color: #fff;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5) 0 0 0 1px #e6ecf8;
@@ -140,7 +140,7 @@ button {
   width: 33.33%;
   padding: 18px 20px 18px 20px;
   margin: auto;
-  text-align: center;
+  text-align: left;
 }
 
 .skillsTitle1 {
