@@ -4,6 +4,7 @@
   border: 0;
   color: black;
   font-family: "Press Start 2P";
+  overflow-x: hidden;
 }
 
 html {
@@ -132,16 +133,16 @@ button {
   display: flex;
 }
 
-.column {
+.skillscolumn {
   box-sizing: border-box;
   line-height: 36px;
-  float: left;
+  display: inline-block;
   width: 33.33%;
   padding: 18px 20px 18px 20px;
 }
 
 .skillsTitle1 {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .skillsSentence1 {
@@ -153,7 +154,7 @@ button {
 }
 
 .skillsTitle2 {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .skillsSentence2 {
@@ -165,7 +166,7 @@ button {
 }
 
 .skillsTitle3 {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .skillsSentence3 {
@@ -212,41 +213,6 @@ button {
   [class*="column"] {
     width: 100%;
   }
-}
-
-.htmlLogo {
-  height: 128px;
-  width: 128px;
-}
-
-.cssLogo {
-  height: 128px;
-  width: 100px;
-}
-
-.projectText {
-  height: 20em;
-  text-align: center;
-  font-size: 30px;
-  text-transform: capitalize;
-  font-family: "Press Start 2P";
-}
-
-.frontendProjectText {
-  text-align: center;
-  font-size: 20px;
-  font-family: "Press Start 2P";
-  z-index: 10;
-}
-
-.row {
-  height: 20em;
-  z-index: 1;
-  margin: auto;
-}
-
-.column {
-  margin: auto;
 }
 
 .nes-btn {
@@ -306,54 +272,33 @@ button {
   outline: 0;
 }
 
-.backendProjectText {
+.frontendProjectText {
   text-align: center;
   font-size: 20px;
   font-family: "Press Start 2P";
+  z-index: 10;
+  overflow: auto;
+  margin-top: 200px;
 }
 
-.column-frontend {
+.column {
   float: left;
   width: 25%;
   padding: 0 10px;
 }
 
-.row-frontend {
+.row {
   margin: 0 -5px;
 }
 
-.row-frontend:after {
+.row:after {
   content: "";
   display: table;
   clear: both;
 }
 
 @media screen and (max-width: 600px) {
-  .column-frontend {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-.column-backend {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-}
-
-.row-backend {
-  margin: 0 -5px;
-}
-
-.row-backend:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 600px) {
-  .column-backend {
+  .column {
     width: 100%;
     display: block;
     margin-bottom: 20px;
@@ -390,6 +335,7 @@ button {
   font-size: 30px;
   text-transform: capitalize;
   font-family: "Press Start 2P";
+  margin-top: 100px;
 }
 
 .contactText {
