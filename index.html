@@ -37,6 +37,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="./wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <title>Portfolio</title>
   </head>
   <body>
@@ -70,26 +74,27 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/#about">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/#skills">Skills</a>
+            <a class="nav-link" href="#filler">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/#projectText">Projects</a>
+            <a class="nav-link" href="#projectTextlink">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/#contactTitle">Contact</a>
+            <a class="nav-link" href="#links1">Links</a>
           </li>
         </ul>
       </div>
     </nav>
 
+    <div id="about"></div>
     <div class="about">
-      <h1 class="aboutText waypoint" data-animation="slide-in-left">
+      <h1 class="aboutText wow slideInUp">
         About
       </h1>
-      <h2 class="aboutSentence animated slideInDown">
+      <h2 class="aboutSentence wow slideInUp">
         This is my portfolio that I am creating as part of my master course with
         CodeNation. This portfolio page will include my projects, my work
         experience, qualifications and my contact details. During my time at
@@ -99,43 +104,42 @@
         code that has been made for developers to use on their website.
       </h2>
     </div>
-
-    <div class="box">
-      <h3 class="skills"></h3>
-      <div class="skillscolumn">
-        <h1 class="skillsTitle1">Languages I'm confident in</h1>
-        <p class="skillsSentence1">
+    <div id="filler"></div>
+    <div id="skills1" class="box">
+      <div id="skillcolumn1" class="skillscolumn">
+        <h1 class="skillsTitle1 wow zoomIn">Languages I'm confident in</h1>
+        <p class="skillsSentence1 wow zoomIn">
           I enjoy being able to create and code things and making them look
           stylish.
         </p>
-        <p class="skillsList1">Languages:</p>
-        <ul class="nes-list is-disc">
+        <p class="skillsList1 wow rollIn">Languages:</p>
+        <ul class="nes-list is-disc wow rollIn">
           <li>HTML</li>
           <li>CSS</li>
           <li>Bootstrap</li>
           <li>JavaScript</li>
         </ul>
       </div>
-      <div class="skillscolumn">
-        <h1 class="skillsTitle2">Languages I'm learning</h1>
-        <p class="skillsSentence2">
+      <div id="skillcolumn2" class="skillscolumn">
+        <h1 class="skillsTitle2 wow zoomIn">Languages I'm learning</h1>
+        <p class="skillsSentence2 wow zoomIn">
           These are the skills that I am currently learning.
         </p>
-        <p class="skillsList2">Languages:</p>
-        <ul class="nes-list is-disc">
+        <p class="skillsList2 wow rollIn">Languages:</p>
+        <ul class="nes-list is-disc wow rollIn">
           <li>React</li>
           <li>Node.js</li>
           <li>APIs</li>
         </ul>
       </div>
-      <div class="skillscolumn">
-        <h1 class="skillsTitle3">Other Skills</h1>
-        <p class="skillsSentence3">
+      <div id="skillcolumn3" class="skillscolumn">
+        <h1 class="skillsTitle3 wow zoomIn">Other Skills</h1>
+        <p class="skillsSentence3 wow zoomIn">
           These are skills that I have learned through different courses and
           jobs.
         </p>
-        <p class="skillsList3">Skills:</p>
-        <ul class="nes-list is-disc">
+        <p class="skillsList3 wow rollIn">Skills:</p>
+        <ul class="nes-list is-disc wow rollIn">
           <li>Problem Solving</li>
           <li>Team Work</li>
           <li>Willingness to learn</li>
@@ -143,11 +147,12 @@
       </div>
     </div>
 
-    <h2 class="frontendProjectText">Projects</h2>
+    <div id="projectTextlink"></div>
+    <h2 class="frontendProjectText wow flipInY">Projects</h2>
 
     <div class="row">
       <div class="column">
-        <div class="animated lightSpeedIn card">
+        <div class="wow lightSpeedIn card">
           <h3 class="card-title">Bus Animation</h3>
           <p class="cardText">HTML and CSS</p>
           <a button class="nes-btn" href="https://codepen.io/Ben93/pen/bzrbde">
@@ -156,7 +161,7 @@
         </div>
       </div>
       <div class="column">
-        <div class="animated lightSpeedIn card">
+        <div class="wow lightSpeedIn card">
           <h3 class="card-title">KeyCode</h3>
           <p class="cardText">JavaScript</p>
           <a
@@ -170,7 +175,7 @@
       </div>
 
       <div class="column">
-        <div class="animated lightSpeedIn card">
+        <div class="wow lightSpeedIn card">
           <h3 class="card-title">Drumkit</h3>
           <p class="cardText">JavaScript</p>
           <a
@@ -184,7 +189,7 @@
       </div>
 
       <div class="column">
-        <div class="animated lightSpeedIn card">
+        <div class="wow lightSpeedIn card">
           <h3 class="card-title">Dice Game</h3>
           <p class="cardText">JavaScript</p>
           <a
@@ -198,7 +203,7 @@
       </div>
 
       <div class="column">
-        <div class="animated lightSpeedIn card">
+        <div class="wow lightSpeedIn card">
           <h3 class="card-title">To-Do List</h3>
           <p class="cardText">React</p>
           <a
@@ -212,7 +217,7 @@
       </div>
 
       <div class="column">
-        <div class="animated lightSpeedIn card">
+        <div class="wow lightSpeedIn card">
           <h3 class="card-title">Calculator</h3>
           <p class="cardText">React</p>
           <a
@@ -226,7 +231,7 @@
       </div>
 
       <div class="column">
-        <div class="animated lightSpeedIn card">
+        <div class="wow lightSpeedIn card">
           <h3 class="card-title">Weather App</h3>
           <p class="cardText">API</p>
           <a
@@ -240,50 +245,23 @@
       </div>
     </div>
 
-    <h1 class="contactTitle">Contact</h1>
-    <h2 class="contactText">Enter your message here</h2>
-
-    <form class="mailSection">
-      <input
-        class="nes-input"
-        placeholder="Enter your name"
-        type="text"
-        name="name"
-        required
-      />
-      <input
-        class="nes-input"
-        placeholder="Enter your email"
-        type="email"
-        name="email"
-        required
-      />
-      <textarea
-        class="nes-textarea"
-        placeholder="Your Message"
-        type="text"
-        name="message"
-      ></textarea>
-      <div id="success">
-        <div>
-          "Message has been sent!"
-          <span id="close" class="mdi mdi-close">
-            ::before
-          </span>
-        </div>
+    <div id="links1">
+      <h2 class="linksTitle">Links</h2>
+      <div class="wow webLinks">
+        <h3 class="linksText">Here are some links for more information.</h3>
+        <a
+          href="https://www.linkedin.com/in/ben-stevenson-ba814414a/"
+          class="nes-icon linkedin is-medium"
+        ></a>
+        <a
+          href="https://github.com/BenJS1993"
+          class="nes-icon github is-medium"
+        ></a>
       </div>
-      <button class="nes-btn">Submit</button>
-    </form>
+    </div>
+
     <div class="footer">
       <p id="footText">Designed by Benjamin John Stevenson * 2019</p>
-      <a
-        href="https://www.linkedin.com/in/ben-stevenson-ba814414a/"
-        class="nes-icon linkedin is-medium"
-      ></a>
-      <a
-        href="https://github.com/BenJS1993"
-        class="nes-icon github is-medium"
-      ></a>
     </div>
     <script src="script.js"></script>
     <script type="text/javascript"></script>
