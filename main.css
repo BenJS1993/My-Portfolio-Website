@@ -250,7 +250,7 @@ button {
   border-image-source: url("data:image/svg+xml;utf8,<?xml version=1.0 encoding=UTF-8 ?><svg version=1.1 width=5 height=5 xmlns=http://www.w3.org/2000/svg><path d=M2 1 h1 v1 h-1 z M1 2 h1 v1 h-1 z M3 2 h1 v1 h-1 z M2 3 h1 v1 h-1 z fill=rgb(33,37,41) /></svg>");
   border-image-outset: 2;
   padding: 6px 8px;
-  margin: auto;
+  margin: auto !important;
   width: 90px;
   text-align: center !important;
   vertical-align: middle;
@@ -375,10 +375,27 @@ button {
 
 .nes-icon {
   position: relative;
-  text-align: center !important;
-  justify-content: center !important;
-  align-items: center !important;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  transform: scale(2);
+  transform-origin: top left;
   margin: auto;
+}
+
+.nes-icon.is-large {
+  margin-right: 48px;
+  margin-bottom: 48px;
+  transform: scale(4);
+}
+
+.nes-icon::before {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  display: block;
+  content: "";
+  background: transparent;
 }
 
 .footer {
