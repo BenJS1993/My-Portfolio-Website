@@ -205,13 +205,11 @@ button {
   font-size: 15px;
 }
 
-.nes-list {
+.nes-list li {
   list-style-type: none;
   font-size: 15px;
-}
-
-.nes-list li {
   position: relative;
+  text-align: left;
 }
 
 .nes-list.is-disc li::before {
@@ -318,7 +316,6 @@ button {
 }
 
 .row {
-  /* margin: auto; */
   text-align: center;
   justify-content: center !important;
   text-align: center;
@@ -339,7 +336,6 @@ button {
 }
 
 .nes-container-card {
-  /* position: relative; */
   padding: 1.5rem 2rem;
   border-color: black;
   border-style: solid;
@@ -362,7 +358,13 @@ button {
 }
 
 #links1 {
+  position: relative;
   margin: auto;
+  padding: 15px;
+  text-align: center !important;
+  vertical-align: middle;
+  text-decoration: none;
+  border-radius: 50%;
 }
 
 .linksTitle {
@@ -380,13 +382,10 @@ button {
 
 .nes-icon {
   /* position: relative; */
-  /* display: inline-block; */
   width: 16px;
   height: 16px;
   transform: scale(2);
   transform-origin: top left;
-  margin: auto !important;
-  text-align: center !important;
 }
 
 .nes-icon.is-large {
