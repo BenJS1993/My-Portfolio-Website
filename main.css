@@ -12,6 +12,7 @@ html {
 
 body {
   -webkit-text-size-adjust: none;
+  overflow-x: hidden;
 }
 
 a,
@@ -207,6 +208,7 @@ button {
 
 .nes-list li {
   list-style-type: none;
+  margin-left: 20px;
   font-size: 15px;
   position: relative;
   text-align: left;
