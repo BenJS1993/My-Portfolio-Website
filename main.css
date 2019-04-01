@@ -336,11 +336,12 @@ button {
   }
 }
 
-.card {
-  display: flex;
-  transition: all 1s;
-  vertical-align: text-bottom;
-  padding: 10px;
+.nes-container-card {
+  position: relative;
+  padding: 1.5rem 2rem;
+  border-color: black;
+  border-style: solid;
+  border-width: 4px;
 }
 
 .card-title {
@@ -374,13 +375,14 @@ button {
 }
 
 .nes-icon {
-  position: relative;
-  display: inline-block;
+  /* position: relative; */
+  /* display: inline-block; */
   width: 16px;
   height: 16px;
   transform: scale(2);
   transform-origin: top left;
-  margin: auto;
+  margin: auto !important;
+  text-align: center !important;
 }
 
 .nes-icon.is-large {
