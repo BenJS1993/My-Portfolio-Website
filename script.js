@@ -15,7 +15,7 @@ const myFunction = () => {
 };
 
 // List of sentences
-var content = ["Hi, I'm Ben Stevenson.", "I'm a Graduate/Junior Developer."];
+var content = ["Hi, I'm Ben Stevenson.", "I'm a Graduate / Junior Developer."];
 
 // Current sentence being processed
 var part = 0;
